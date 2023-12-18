@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1> Villa Borobudur Resort </h1>
+        <p> Dusun Menoreh Villas, Dusun Pete RT003 RW 003, 56553 Borobudur, Indonesia</p>
+    </header>
+
+    <main>
+        <section class="booking-form">
+            <h2>Book a Room</h2>
+            <form action="#" method="post">
+                <label for="checkInDate">Check-In Date:</label>
+                <input type="date" id="checkInDate" name="checkInDate" required>
+
+                <label for="checkOutDate">Check-Out Date:</label>
+                <input type="date" id="checkOutDate" name="checkOutDate" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <label for="roomType">Select Room Type:</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="standard">Deluxe Double</option>
+                    <option value="deluxe">High Deluxe Double</option>
+                    <option value="suite">Deluxe Executive</option>
+                    <!-- Add more room options as needed -->
+                </select>
+                <button onclick="location.href='pymnt1.html';">Add to Cart</button>
+                <button onclick="location.href='uas1.html';">Kembali</button>
+            </form>
+        </section>
+
+        <section class="room-options">
+            <h2>Available Rooms</h2>
+            <div class="room-item">
+                <img src="4.jpg" alt="Room 1">
+                <h3>Deluxe Double</h3>
+                <p>Price: Rp. 798.000 per night</p>
+            </div>
+
+            <div class="room-item">
+                <img src="4.2.jpg" alt="Room 2">
+                <h3>High Deluxe Double</h3>
+                <p>Price: RP. 947.369 per night</p>
+            </div>
+
+            <div class="room-item">
+                <img src="4.3.jpg" alt="Room 3">
+                <h3>Deluxe executive </h3>
+                <p>Price: 1.147.369 per night</p>
+            </div>
+            <!-- Add more room items as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Room Booking</p>
+    </footer>
+    
+
+</body>
+</html>

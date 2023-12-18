@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Pembayaran</title>
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Detail Pembayaran</h2>
+        <div class="payment-form">
+            <label for="card-number">Nomor Kartu Kredit:</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="16" required>
+            
+            <label for="expiry-date">Tanggal Kadaluarsa:</label>
+            <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="123" maxlength="3" required>
+
+            <button onclick="processPayment()">Proses Pembayaran</button><br>
+            <button onclick="location.href='Hotel.html';">Kembali</button>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
